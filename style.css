@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #575757;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.container {
+    background: rgb(255, 255, 255);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.53);
+    padding: 32px;
+    width: 100%;
+    max-width: 480px;
+}
+
+h2 {
+    color: #47494c;
+    margin-bottom: 24px;
+    font-size: 1.4rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px 14px;
+    margin-bottom: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    transition: border 0.2s;
+    outline: none;
+}
+
+input:focus, textarea:focus {
+    border-color: #3c3c3c;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+button {
+    background-color: #1a3c6e;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    float: right;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: #0f2a52;
+}
+
+/* Hasil output */
+.result {
+    margin-top: 28px;
+    padding: 20px;
+    background: #eef3fb;
+    border-left: 4px solid #1a3c6e;
+    border-radius: 6px;
+    line-height: 1.8;
+}
+
+.result p {
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.result strong {
+    color: #1a3c6e;
+}
+
+.reset-link {
+    display: inline-block;
+    margin-top: 14px;
+    color: #1a3c6e;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+.reset-link:hover {
+    text-decoration: underline;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
